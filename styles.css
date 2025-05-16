@@ -1,0 +1,340 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  line-height: 1.6;
+}
+
+#navbar {
+  position: fixed;
+  width: 100%;
+  background-color: #0047AB;
+  color: #fff;
+  padding: 10px 0;
+  z-index: 999;
+  top: 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100%;
+  padding: 0 20px;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo h1 {
+  margin: 0;
+  color: white;
+  font-size: 20px;
+}
+
+.navbar-right nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-right nav ul li {
+  margin: 0 10px;
+}
+
+
+.logo img {
+  width: 60px;
+  margin-right: 10px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#hero-section {
+  background: url('https://i.ibb.co/q7qPt7H/bandung-hero.jpg') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 70px;
+  color: white;
+}
+
+.hero-content {
+  background: rgba(0,0,0,0.5);
+  padding: 30px;
+  border-radius: 10px;
+}
+
+#map-section {
+  padding: 60px 20px;
+  background: #f4f4f4;
+  text-align: lef;
+}
+
+#map {
+  width: 90%;
+  height: 500px;
+  margin: auto;
+  background: #ddd;
+  border-radius: 10px;
+}
+
+#data-section {
+  padding: 60px 20px;
+  background: white;
+}
+
+.data-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.data-item {
+  width: 300px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+  text-align: center;
+}
+
+.data-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.data-item h3, .data-item p {
+  padding: 10px;
+}
+
+#author-section {
+  padding: 60px 20px;
+  background: #E8EBD2;
+  text-align: center;
+  
+}
+
+.profile-picture {
+  border-radius: 50%;
+  width: 120px;
+  margin-bottom: 20px;
+}
+
+#footer {
+  background-color: #0047AB;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+.legend {
+  padding: 6px 8px; 
+background-color: rgb(255, 251, 251);
+box-shadow: 0 0 15px rgba(0,0,0,0.2);     border-radius: 5px; 
+} 
+
+.legend div {
+  width: 30px;
+  height: 15px;
+  float: left;
+  margin-right: 8px;
+  opacity: 0.7; 
+} 
+
+div.legend.leaflet-control br {
+  clear: both; 
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: #000000;
+}
+
+body.dark-mode #navbar {
+  background-color: #1e1e1e;
+}
+
+body.dark-mode #hero-section {
+  background-blend-mode: darken;
+}
+
+body.dark-mode .data-item {
+  background-color: #2a2a2a;
+  color: white;
+}
+
+body.dark-mode #author-section {
+  background-color: #1a1a1a;
+  color: white;
+}
+
+body.dark-mode #footer {
+  background-color: #1e1e1e;
+  color: white;
+}
+
+#dark-toggle {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+.contact-bubble {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.03); /* fallback transparan */
+  transition: transform 0.3s ease;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+/* Specific pastel backgrounds */
+.icon.linkedin {
+  background-color: rgba(0, 123, 255, 0.1);
+  color: #0077b5;
+}
+
+.icon.email {
+  background-color: rgba(255, 0, 0, 0.1);
+  color: #e63946;
+}
+
+.icon.phone {
+  background-color: rgba(0, 255, 0, 0.1);
+  color: #28a745;
+}
+
+.icon:hover {
+  transform: scale(1.1);
+}
+
+/* Global dark mode */
+body.dark-mode {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+/* Navbar */
+body.dark-mode #navbar {
+  background-color: #1f1f1f;
+  color: white;
+}
+
+body.dark-mode nav ul li a {
+  color: #f0f0f0;
+}
+
+/* Hero section */
+body.dark-mode #hero-section {
+  background-blend-mode: darken;
+  color: white;
+}
+
+body.dark-mode .hero-content {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+/* Map section */
+body.dark-mode #map-section {
+  background-color: #1a1a1a;
+}
+
+body.dark-mode #map {
+  background-color: #333;
+}
+
+/* Data section */
+body.dark-mode #data-section {
+  background-color: #1c1c1c;
+  color: white;
+}
+
+body.dark-mode .data-item {
+  background-color: #2a2a2a;
+  color: white;
+}
+
+/* Author section */
+body.dark-mode #author-section {
+  background-color: #1a1a1a;
+  color: white;
+}
+
+/* Footer */
+body.dark-mode #footer {
+  background-color: #1f1f1f;
+  color: white;
+}
+
+/* Legend */
+body.dark-mode .legend {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: rgb(0, 0, 0);
+}
+
+/* Layer control (leaflet) */
+body.dark-mode .leaflet-control-layers {
+  background-color: rgba(255, 255, 255, 0.95) !important;
+  color: rgb(0, 0, 0);
+}
+
+/* Leaflet buttons */
+body.dark-mode .leaflet-bar a,
+body.dark-mode .leaflet-bar a:hover {
+  background-color: #fff4f4;
+  color: rgb(0, 0, 0);
+}
+
+/* Reset, Legend, Ukur Jarak Buttons */
+body.dark-mode .leaflet-control-easybutton-button {
+  background-color: #333 !important;
+  color: white !important;
+}
