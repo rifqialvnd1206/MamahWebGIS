@@ -179,3 +179,5 @@ legend.onAdd = function () {
 }; 
 
 legend.addTo(map);
+
+fetch('assets/jembatan.geojson')
